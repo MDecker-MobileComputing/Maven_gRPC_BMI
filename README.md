@@ -2,7 +2,7 @@
 
 <br>
 
-Siehe [dieses Repo](https://github.com/MDecker-MobileComputing/Nodejs_gRPC_BMI) für die Nodejs-Variante.
+Siehe [dieses Repo](https://github.com/MDecker-MobileComputing/Nodejs_gRPC_BMI) für die Nodejs-Variante inkl. Server.
 
 <br>
 
