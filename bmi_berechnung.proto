@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package bmi;
+
+
+// Nachricht für die Eingabeparameter der BMI-Berechnung
+message BmiEingabe {
+
+    float gewicht_kg        = 1;
+    float koerpergroesse_cm = 2; 
+}
+
+// Nachricht für das Ergebnis der BMI-Berechnung
+message BmiErgebnis {
+
+    float  bmi_wert           = 1; // z.B. 22.5
+    string bmi_interpretation = 2; // z.B. "Normalgewicht"
+}
+
+
+/**
+ * Dienstdefinition für die BMI-Berechnung
+ */
+service BmiDienst {
+
+    rpc BerechneBmi( BmiEingabe ) returns ( BmiErgebnis );
+}
+
