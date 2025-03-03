@@ -16,7 +16,7 @@ public class BmiBerechnung {
 	 * Einstiegsmethode.
 	 * 
 	 * @param args Kommandozeilenargumente, werden nicht ausgewertet.
-	 */
+	 */		
     public static void main( String[] args ) {
 
         System.out.println();
@@ -35,9 +35,9 @@ public class BmiBerechnung {
 			                          .setKoerpergroesseCm( 175 )
 			                          .build();
         
-        final BmiErgebnis ergebnis = stub.berechneBmi( eingabe );
+        final BmiErgebnis ergebnis = stub.berechneBmi( eingabe ); // eigentlicher entfernter Aufruf
 
-        final float  bmiWert = ergebnis.getBmiWert();
+        final float  bmiWert           = ergebnis.getBmiWert();
         final String bmiInterpretation = ergebnis.getBmiInterpretation();
         
         final float bmiWertGerundet = Math.round( bmiWert * 10 ) / 10.0f;
