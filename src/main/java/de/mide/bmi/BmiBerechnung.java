@@ -27,13 +27,13 @@ public class BmiBerechnung {
                                      .build();
         
         final BmiDienstGrpc.BmiDienstBlockingStub stub = 
-                    BmiDienstGrpc.newBlockingStub( channel );
+                    			BmiDienstGrpc.newBlockingStub( channel );
         
         final BmiEingabe eingabe = 
-                BmiEingabe.newBuilder()
-                          .setGewichtKg( 77 )
-                          .setKoerpergroesseCm( 175 )
-                          .build();
+			                BmiEingabe.newBuilder()
+			                          .setGewichtKg( 77 )
+			                          .setKoerpergroesseCm( 175 )
+			                          .build();
         
         final BmiErgebnis ergebnis = stub.berechneBmi( eingabe );
 
