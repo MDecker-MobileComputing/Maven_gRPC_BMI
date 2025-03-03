@@ -12,6 +12,11 @@ import io.grpc.ManagedChannelBuilder;
  */
 public class BmiBerechnung {
 
+	/**
+	 * Einstiegsmethode.
+	 * 
+	 * @param args Kommandozeilenargumente, werden nicht ausgewertet.
+	 */
     public static void main( String[] args ) {
 
         System.out.println();
