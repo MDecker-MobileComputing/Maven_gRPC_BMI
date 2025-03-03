@@ -6,6 +6,7 @@ import bmi.BmiDienstGrpc;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 
+
 /**
  * gRPC-Client nach https://www.baeldung.com/grpc-introduction#creating-the-client
  */
