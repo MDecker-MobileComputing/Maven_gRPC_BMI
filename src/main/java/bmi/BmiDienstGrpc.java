@@ -4,7 +4,6 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
 
 /**
  * <pre>
- **
  * Dienstdefinition für die BMI-Berechnung
  * </pre>
  */
@@ -111,13 +110,15 @@ public final class BmiDienstGrpc {
 
   /**
    * <pre>
-   **
    * Dienstdefinition für die BMI-Berechnung
    * </pre>
    */
   public interface AsyncService {
 
     /**
+     * <pre>
+     * Berechnet den BMI basierend auf den Eingabeparametern und gibt das Ergebnis zurück.
+     * </pre>
      */
     default void berechneBmi(bmi.BmiBerechnung.BmiEingabe request,
         io.grpc.stub.StreamObserver<bmi.BmiBerechnung.BmiErgebnis> responseObserver) {
@@ -128,7 +129,6 @@ public final class BmiDienstGrpc {
   /**
    * Base class for the server implementation of the service BmiDienst.
    * <pre>
-   **
    * Dienstdefinition für die BMI-Berechnung
    * </pre>
    */
@@ -143,7 +143,6 @@ public final class BmiDienstGrpc {
   /**
    * A stub to allow clients to do asynchronous rpc calls to service BmiDienst.
    * <pre>
-   **
    * Dienstdefinition für die BMI-Berechnung
    * </pre>
    */
@@ -161,6 +160,9 @@ public final class BmiDienstGrpc {
     }
 
     /**
+     * <pre>
+     * Berechnet den BMI basierend auf den Eingabeparametern und gibt das Ergebnis zurück.
+     * </pre>
      */
     public void berechneBmi(bmi.BmiBerechnung.BmiEingabe request,
         io.grpc.stub.StreamObserver<bmi.BmiBerechnung.BmiErgebnis> responseObserver) {
@@ -172,7 +174,6 @@ public final class BmiDienstGrpc {
   /**
    * A stub to allow clients to do synchronous rpc calls to service BmiDienst.
    * <pre>
-   **
    * Dienstdefinition für die BMI-Berechnung
    * </pre>
    */
@@ -190,6 +191,9 @@ public final class BmiDienstGrpc {
     }
 
     /**
+     * <pre>
+     * Berechnet den BMI basierend auf den Eingabeparametern und gibt das Ergebnis zurück.
+     * </pre>
      */
     public bmi.BmiBerechnung.BmiErgebnis berechneBmi(bmi.BmiBerechnung.BmiEingabe request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
@@ -200,7 +204,6 @@ public final class BmiDienstGrpc {
   /**
    * A stub to allow clients to do limited synchronous rpc calls to service BmiDienst.
    * <pre>
-   **
    * Dienstdefinition für die BMI-Berechnung
    * </pre>
    */
@@ -218,6 +221,9 @@ public final class BmiDienstGrpc {
     }
 
     /**
+     * <pre>
+     * Berechnet den BMI basierend auf den Eingabeparametern und gibt das Ergebnis zurück.
+     * </pre>
      */
     public bmi.BmiBerechnung.BmiErgebnis berechneBmi(bmi.BmiBerechnung.BmiEingabe request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
@@ -228,7 +234,6 @@ public final class BmiDienstGrpc {
   /**
    * A stub to allow clients to do ListenableFuture-style rpc calls to service BmiDienst.
    * <pre>
-   **
    * Dienstdefinition für die BMI-Berechnung
    * </pre>
    */
@@ -246,6 +251,9 @@ public final class BmiDienstGrpc {
     }
 
     /**
+     * <pre>
+     * Berechnet den BMI basierend auf den Eingabeparametern und gibt das Ergebnis zurück.
+     * </pre>
      */
     public com.google.common.util.concurrent.ListenableFuture<bmi.BmiBerechnung.BmiErgebnis> berechneBmi(
         bmi.BmiBerechnung.BmiEingabe request) {

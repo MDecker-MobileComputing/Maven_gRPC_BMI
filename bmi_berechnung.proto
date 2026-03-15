@@ -18,11 +18,10 @@ message BmiErgebnis {
 }
 
 
-/**
- * Dienstdefinition für die BMI-Berechnung
- */
+// Dienstdefinition für die BMI-Berechnung
 service BmiDienst {
 
+    // Berechnet den BMI basierend auf den Eingabeparametern und gibt das Ergebnis zurück.
     rpc BerechneBmi( BmiEingabe ) returns ( BmiErgebnis );
 }
 
