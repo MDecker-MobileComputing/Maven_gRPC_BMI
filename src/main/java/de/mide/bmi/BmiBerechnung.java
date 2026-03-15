@@ -12,6 +12,7 @@ import io.grpc.ManagedChannelBuilder;
  */
 public class BmiBerechnung {
 
+	
 	/**
 	 * Einstiegsmethode.
 	 * 
@@ -46,6 +47,5 @@ public class BmiBerechnung {
         System.out.println( "BMI-Kategorie: " + bmiInterpretation );
         
         System.out.println();
-    }
-    
+    }    
 }
